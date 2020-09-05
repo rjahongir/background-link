@@ -31,6 +31,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   max-width: 1000px;
   padding: 20px;
   margin-top: 100px;
@@ -53,9 +54,6 @@ body {
   margin: 0;
 }
 
-.container-css {
-}
-
 .css-header > a {
   font-size: 20px;
   text-decoration: none;
@@ -74,18 +72,26 @@ body {
   content: "";
 }
 
-.container-css > p {
+.container-box > p {
   padding-right: 100px;
   line-height: 14px;
+}
+
+.container-css > p {
   color: rgba(255, 255, 255, 0.836);
 }
 
-.container-css > a {
-  display: inline-block;
-  color: rgba(192, 207, 57, 0.774);
+.container-box > a {
+  position: relative;
+  z-index: 2;
   text-decoration: none;
   letter-spacing: 1.3px;
 }
+
+.container-css > a {
+  color: rgba(192, 207, 57, 0.774);
+}
+
 .html-css-header > a {
   color: darkorange;
 }
@@ -97,7 +103,6 @@ body {
 }
 
 .container-html-css > a {
-  text-decoration: none;
   color: crimson;
 }
 
@@ -110,12 +115,9 @@ body {
 }
 
 .container-javascript > p {
-  padding-right: 100px;
-  line-height: 14px;
   color: rgba(38, 5, 80, 0.829);
 }
 
 .container-javascript > a {
-  text-decoration: none;
   color: crimson;
 }
